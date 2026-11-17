@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informe de impacto digital de la Asociación Deportiva Club Sport Herediano.">
+  <title>Impacto Digital | Asociación Deportiva Club Sport Herediano</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <img class="header-crest" src="assets/escudo-club-sport-herediano.png" alt="Escudo Club Sport Herediano">
+    <div class="brand-copy">
+      <div class="eyebrow">ASOCIACIÓN DEPORTIVA</div>
+      <div class="brand-name">CLUB SPORT HEREDIANO</div>
+    </div>
+    <div class="topbar-right"><span class="live-dot"></span> INFORME DE GESTIÓN DIGITAL</div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow red">INFORME DE RESULTADOS · REDES SOCIALES</p>
+        <h1>Un año de <span>impacto digital.</span></h1>
+        <p class="hero-sub">Facebook e Instagram · Del 29 de septiembre de 2025 al 31 de octubre de 2026</p>
+      </div>
+      <div class="hero-brand">
+        <img class="hero-crest" src="assets/escudo-club-sport-herediano.png" alt="Escudo oficial proporcionado de Club Sport Herediano">
+        <div class="hero-side">
+          <div class="hero-side-label">PLATAFORMAS ANALIZADAS</div>
+          <div class="platforms"><span class="fb">f</span><span class="ig">◎</span></div>
+          <div class="hero-side-caption">Facebook + Instagram</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <div><p class="eyebrow">01 / RESUMEN EJECUTIVO</p><h2>El impacto en cifras</h2></div>
+      <div class="period-chip">29 SEP 2025 — 31 OCT 2026</div>
+    </section>
+    <section class="kpi-grid" id="kpis">
+      <article class="kpi kpi-primary"><div class="kpi-label">Visualizaciones</div><div class="kpi-value" id="kpi-views">—</div><div class="kpi-foot">Reproducciones y visualizaciones registradas</div></article>
+      <article class="kpi"><div class="kpi-label">Interacciones</div><div class="kpi-value" id="kpi-interactions">—</div><div class="kpi-foot">Interacciones con el contenido</div></article>
+      <article class="kpi"><div class="kpi-label">Visitas</div><div class="kpi-value" id="kpi-visits">—</div><div class="kpi-foot">Visitas a páginas y perfiles</div></article>
+      <article class="kpi"><div class="kpi-label">Clics en enlaces</div><div class="kpi-value" id="kpi-clicks">—</div><div class="kpi-foot">Clics registrados en enlaces</div></article>
+      <article class="kpi"><div class="kpi-label">Registros de seguidores*</div><div class="kpi-value" id="kpi-followers">—</div><div class="kpi-foot">Suma de los valores diarios exportados</div></article>
+    </section>
+    <p class="method-note">*El indicador de seguidores representa la suma de los registros diarios exportados, no el total actual de seguidores de las cuentas. La exportación de Instagram comienza el 12 de noviembre de 2025.</p>
+
+    <section class="section-heading">
+      <div><p class="eyebrow">02 / EVOLUCIÓN</p><h2>Rendimiento a lo largo del período</h2></div>
+      <label class="select-wrap">Indicador
+        <select id="metric-select">
+          <option value="views">Visualizaciones</option>
+          <option value="interactions">Interacciones</option>
+          <option value="visits">Visitas</option>
+          <option value="clicks">Clics en enlaces</option>
+          <option value="followers">Registros de seguidores</option>
+        </select>
+      </label>
+    </section>
+    <section class="panel chart-panel">
+      <div class="chart-legend"><span><i class="legend-dot red-dot"></i> Facebook</span><span><i class="legend-dot gold-dot"></i> Instagram</span></div>
+      <div class="chart-wrap"><canvas id="trend-chart" aria-label="Gráfico mensual comparativo"></canvas></div>
+      <div class="chart-foot">Totales mensuales a partir de los valores diarios exportados desde Meta Business Suite.</div>
+    </section>
+
+    <section class="section-heading">
+      <div><p class="eyebrow">03 / COMPARATIVA</p><h2>Contribución por plataforma</h2></div>
+    </section>
+    <section class="panel table-panel">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Indicador</th><th>Facebook</th><th>Instagram</th><th>Total combinado</th></tr></thead>
+          <tbody id="comparison-body"></tbody>
+        </table>
+      </div>
+      <p class="method-note inside">Los totales combinados suman eventos/acciones reportados por cada plataforma. No representan personas únicas entre Facebook e Instagram.</p>
+    </section>
+
+    <section class="section-heading">
+      <div><p class="eyebrow">04 / AUDIENCIA</p><h2>Espectadores registrados</h2></div>
+    </section>
+    <section class="panel audience-panel">
+      <div class="audience-number" id="audience-total">—</div>
+      <div><h3>Suma de espectadores diarios reportados</h3><p>Este valor acumula los registros diarios de ambas plataformas. No equivale al número de personas únicas alcanzadas durante todo el período, ya que una misma persona puede aparecer en varios días y en ambas redes.</p></div>
+    </section>
+
+    <section class="section-heading">
+      <div><p class="eyebrow">05 / LECTURA DE RESULTADOS</p><h2>Claves para la presentación</h2></div>
+    </section>
+    <section class="insight-grid" id="insights"></section>
+
+    <footer class="footer">
+      <div class="footer-brand">ASOCIACIÓN DEPORTIVA CLUB SPORT HEREDIANO</div>
+      <div>Informe elaborado a partir de exportaciones de Meta Business Suite.</div>
+      <div class="footer-date">Período analizado: 29/09/2025 — 31/10/2026</div>
+    </footer>
+  </main>
+  <div id="load-error" class="error hidden"></div>
+  <script src="js/data.js"></script>\n  <script src="js/app.js"></script>
+</body>
+</html>
